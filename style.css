@@ -108,10 +108,11 @@ a {
 
 /* banner section */
 .banner {
+    width: 75%;
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
-    padding-right: 40px;
+    gap: 155px;
 }
 .banner-left {
     display: flex;
@@ -120,13 +121,19 @@ a {
     padding-top: 70px;
 }
 
+/* .banner-left span {
+    font-family: "Dancing Script", cursive;
+    font-size: 5rem;
+} */
 .banner-left p {
     width: 520px;
 }
 
 .banner-left .btn {
     display: flex;
+    flex-direction: row;
     gap: 14px;
+    justify-content: flex-start;
 }
 
 .banner-left .btn .primary-btn {
@@ -141,6 +148,10 @@ a {
    color: rgb(255, 255, 255); 
    cursor: pointer;
 }
+
+.banner-left .btn .primary {
+    display: none;
+ }
 
 .banner-left .btn .secondary-btn {
     font-size: 1.125rem;
@@ -160,7 +171,8 @@ a {
  }
 
  .banner-image img {
-    height: 600px;
+    height: 635px;
+    position: static;
  }
 
  .banner-card-1{
@@ -176,8 +188,8 @@ a {
     align-items: center;
     gap: 12px;
     position: absolute;
-    left: -35%;
-    top: 72%;
+    left: -28%;
+    top: 70%;
  }
 
  .circle {
@@ -201,6 +213,134 @@ a {
     align-items: flex-start;
     padding-left: 24px;
     position: absolute;
-    right: -27%;
+    right: -20%;
     top: 23%;
  }
+
+.hamburger-icon {
+    display: none;
+}
+
+
+/* Small device: upto 576 px 
+Medium Device: 576px to 992 px 
+Large Device: above 993 px  */
+
+/* Syling for responsive website */
+@media only screen and (max-width: 576px) {
+    /* 80px */
+    .font1 {
+    font-size: 2.25rem; 
+    font-weight: 900;
+    }
+    /* 70px */
+    .font2 {
+    font-size: 4.375rem;
+    font-weight: 900;  
+    }
+    /* 48px */
+    .font3 {
+    font-size: 3rem;
+    font-weight: 900;
+    }
+    /* 40px */
+    .font4 {
+    font-size: 2rem;
+    font-weight: 900;
+    }
+    /* 36px */
+    .font5 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    }
+    /* 32px */
+    .font6 {
+    font-size: 2rem;
+    font-weight: 700;
+    }
+    /* 28px */
+    .font7 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    }
+    /* 18px */
+    .font8 {
+    font-size: 1.125rem;
+    font-weight: 900;
+    }
+    /* 16px */
+    .font10 {
+    font-size: 1rem;
+    font-weight: 400;
+    }
+
+    /* 9px */
+    .font11 {
+        font-size: 0.7rem;
+        font-weight: normal;
+    }
+
+    /* navigation section */
+    .hamburger-icon{
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    /* banner section */
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+        width: 75%;
+    }
+
+    .banner-left {
+        padding-top: 20px;
+    }
+    .banner-left p {
+        width: 285px;
+    }
+
+    .banner-left .btn .primary-btn {
+        display: none;
+    }
+
+    .banner-left .btn .primary {
+        display: block;
+        width: 169px;
+        height: 54px;
+    }
+
+    .banner-left .btn .secondary-btn {
+        width: 169px;
+        height: 54px;
+        padding: 16px 20px;
+    }
+
+    .banner-left .btn {
+        justify-content: center;
+        padding-left: 95px;
+    }
+
+    .banner-image img {
+        height: 450px;
+        padding-left: 40px;
+    }
+
+    .banner-card-1 {
+        left: -5%;
+        top: 40%;
+        width: 155.74px;
+        height: 72.58px;
+    }
+
+    .banner-card-2 {
+        right: -45%;
+        top: 10%;
+        width: 155px;
+        height: 75px;
+        padding-left: 15px;
+    }
+}
