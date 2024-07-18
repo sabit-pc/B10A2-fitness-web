@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.canvas {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+/* 80px */
+.font1 {
+    font-size: 5rem; 
+    font-weight: 900;
+}
+/* 70px */
+.font2 {
+  font-size: 4.375rem;
+  font-weight: 900;  
+}
+/* 48px */
+.font3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+/* 40px */
+.font4 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+/* 36px */
+.font5 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+/* 32px */
+.font6 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* 28px */
+.font7 {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+/* 24px */
+.font8 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+/* 18px */
+.font9 {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+/* 16px */
+.font10 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* navigation section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.nav-menu {
+    width: 465px;
+    height: 46px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 39px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-menu .nav-item {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-menu .nav-item .current {
+    border: none;
+    border-radius: 46px;
+    border-radius: 46px;background: rgb(230, 83, 60);
+    padding: 8px 35px;
+}
+
