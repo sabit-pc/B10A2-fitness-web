@@ -1,0 +1,11 @@
+1. how to set 1440px properly with the center alignment and applicable for greater devices?
+
+2. how to resize photo in grid system?
+
+3. how to colorize picture in grid layouts?
+
+4. how to put placeholder in select function?
+
+5. how to set padding while input?
+
+6. how to set table (table head etc.) border, cellpadding?
