@@ -17,6 +17,10 @@ body {
     padding: 3rem 0rem;
 }
 
+header {
+    background: linear-gradient(black, rgba(128, 128, 128, 0.27),black);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -91,6 +95,7 @@ nav {
 .banner-left p {
     font-size: 1rem;
     font-weight: normal;
+    color: rgb(176, 176, 176);
 }
 
 .btn {
@@ -99,7 +104,7 @@ nav {
 }
 
 .btn1 {
-    width: 40%;
+    width: 224px;
     height: 50px;
     font-size: 1rem;
     font-weight: 600;
@@ -119,7 +124,7 @@ nav {
 
 
 .btn3 {
-    width: 40%;
+    width: 224px;
     height: 50px;
     font-size: 1rem;
     font-weight: 600;
@@ -164,7 +169,7 @@ nav {
     align-items: center;
     gap: 7px;
     position: absolute;
-    left: -12%;
+    left: -6%;
     top: 70%;
 }
 
@@ -190,7 +195,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    right: -2%;
+    right: 2%;
     top: 25%;
 }
 
@@ -265,11 +270,23 @@ nav {
 
 .run-text p {
     width: 70%;
+    color: rgb(176, 176, 176);
 }
 
 .run-text h1 {
     font-size: 3rem;
     font-weight: 800;
+}
+
+.btn4 {
+        width: 224px;
+        height: 40px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        background-color: rgb(230, 83, 60);
+        border: none;
+        color: white;
+        border-radius: 30px;
 }
 .run-image {
     width: 40%;
@@ -285,9 +302,10 @@ nav {
 .training {
     padding-top: 6rem;
 }
-.training p {
-    width: 50%;
-    margin-bottom: 60px;
+.training .pp {
+    width: 90%;
+    margin-bottom: 40px;
+    color: rgb(176, 176, 176);
 }
 
 .training h1 {
@@ -300,8 +318,7 @@ nav {
     width: 100%;
     height: 201.5px;
     display: grid;
-    grid-template-columns: 0.7fr 1.5fr 0.8fr;
-    overflow: hidden;
+    grid-template-columns: 0.7fr 1.4fr 0.9fr;
     font-size: 0.9rem;
 }
 
@@ -310,7 +327,6 @@ nav {
     height: 201.5px;
     display: grid;
     grid-template-columns: 1.2fr 0.8fr 1fr;
-    overflow: hidden;
     font-size: 0.9rem;
 }
 
@@ -395,11 +411,6 @@ nav {
     left: 8%;
 }
 
-
-
-
-
-
 /* bmi title */
 .bmi-title {
     padding-left: 250px;
@@ -414,6 +425,7 @@ nav {
 .bmi-title p {
     font-size: 1rem;
     font-weight: normal;
+    color: rgb(176, 176, 176);
 }
 
 /* bmi */
@@ -467,6 +479,7 @@ td {
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 25px;
+    color: rgb(176, 176, 176);
 }
 
 .bmi-input-row1 .place1 {
@@ -565,11 +578,12 @@ select:invalid {
     font-weight: 800;
     margin-bottom: 15px;
 }
-.team p {
+.team .ppp {
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 50px;
     text-align: center;
+    color: rgb(176, 176, 176);
 }
 
 .team-name-plate {
@@ -578,11 +592,23 @@ select:invalid {
     gap: 20px;
 }
 
-.team-image {
+/* .team-image {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 20px;
+} */
+
+.team-image {
+    width: 326.67px;
+    height: 272px;
+    border: none;
+    border-radius: 20px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
 }
 
 .team-name-plate {
@@ -600,7 +626,7 @@ select:invalid {
 
 .team-name {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 10%;
     font-size: 1.5rem;
     font-weight: 800;
@@ -608,7 +634,7 @@ select:invalid {
 
 .team-designation {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 10%;
     font-size: 1rem;
     font-weight: normal;
@@ -678,6 +704,9 @@ footer {
 
 /* styling for making site responsive */
 @media only screen and (max-width: 576px) {
+    body {
+        font-family: "Inter", sans-serif;;
+    }
     .canvas {
         width: 85%;
     }
@@ -763,10 +792,11 @@ footer {
     }
 
     .banner-card-2 {
-        width: 135px;
-        height: 60px;
-        right: 2%;
+        width: 110px;
+        height: 65px;
+        right: 6%;
         top: 28%;
+        padding-left: 10px;
     }
     
     .banner-card-2 h4 {
@@ -780,7 +810,7 @@ footer {
     /* habit section */
     .habit h2 {
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 800;
     }
 
     .habit-container {
@@ -793,7 +823,7 @@ footer {
         flex-direction: column;
         gap: 35px;
         padding: 20px;
-        text-align: center;
+        text-align: left;
         margin-top: 2.5rem;
     }
 
@@ -808,7 +838,12 @@ footer {
         width: 100%;
     }
     .run-text p {
-        width: 100%;
+        width: 90%;
+    }
+
+    .btn4 {
+        width: 90%;
+        margin: 0 auto;
     }
 
     /* training section */
@@ -816,17 +851,73 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-
+        align-items: flex-start;
     }
     .training p {
         width: 80%;
-        text-align: center;
+        text-align: left;
     }
     
     .training h1 {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .row1 {
+        width: 353px;
+        height: 126.5px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .row2 {
+        width: 353px;
+        height: 126.5px;
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: center;
+    }
+
+
+    .training-image {
+        background-position: top;
+        background-size: cover;
+    }
+
+    .training-text-1 {
+        position: absolute;
+        top: 75%;
+        left: 8%;
+    }
+
+    .training-text-2 {
+        position: absolute;
+        top: 15%;
+        left: 8%;
+    }
+
+
+    .box4 .training-text-4 {
+        position: absolute;
+        top: 70%;
+        left: 7%;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    
+    .box5 .training-text-5 {
+        position: absolute;
+        top: 65%;
+        left: 7%;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    
+
+    .box3 {
+        display: none;
+    }
+
+    .box6 {
+        display: none;
     }
 
     /* bmi title section */
@@ -835,14 +926,14 @@ footer {
         margin-top: 0rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     .bmi-title h2 {
         font-size: 2rem;
     }
     
     .bmi-title p {
-        text-align: center;
+        text-align: left;
     }
 
     /* bmi calculator section */
@@ -853,43 +944,73 @@ footer {
         text-align: center;
     }
     
-    .calculator {
+    .bmi {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        padding: 15% 0%;
-        justify-content: center;
-        align-items: center;
+        padding: 0px;
     }
-    
+
+    .bmi-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .bmi-chart {
+        width: 100%;
+    }
+
+    .bmi-chart h1 {
+        font-size: 1.3rem;
+    }
+
+    .calculator {
+        width: 100%;
+        justify-items: flex-start;
+        padding-left: 0px;
+    }
+
+    .calculator h1 {
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+    .calculator p {
+        text-align: left;
+        width: 90%;
+    }
+
     .bmi-input-row1 {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
-    
+
+    .bmi-input-row1 .place1 {
+        width: 169px;
+    }
+
     .bmi-input-row2 {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        gap: 12px;
+    }
+
+    .bmi-input-row2 .place2 {
+        width: 169px;
     }
 
     .bmi-input-row3 {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
-    .bmi-input-row1 .place1 {
-        width: 250px;
-    }
-
-    .bmi-input-row2 .place2 {
-        width: 250px;
-    }
-
     .bmi-input-row3 .place3 {
-        width: 250px;
+        width: 350px;
+    }
+
+    .calculate-btn {
+        margin-top: 0px;
+        margin-top: 15px;
     }
 
     /* team section */
