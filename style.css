@@ -452,7 +452,7 @@ nav {
     font-weight: 800;
 }
 
-table, th, td {
+.bmi-chart .table1, th, td {
     border: 2px solid #373737;
     border-collapse: collapse;
     width: 350px;
@@ -460,7 +460,11 @@ table, th, td {
     text-align: start;
 }
 
-td {
+.bmi-chart .table1 th {
+    border: 2px solid #373737;
+}
+
+.bmi-chart td {
     color: rgb(176, 176, 176);
 }
 
@@ -537,6 +541,8 @@ select:invalid {
 
 .calculate-btn {
     margin-top: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 .bmi-input-row2 {
@@ -631,6 +637,183 @@ select:invalid {
     left: 10%;
     font-size: 1rem;
     font-weight: normal;
+}
+
+/* transformation story */
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.story h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.story-p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(176, 176, 176);
+    margin-bottom: 20px;
+}
+
+.story-border {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.story-border h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.story-holder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.story-border .story-shape {
+    width: 4px;
+    height: 40px;
+    background-color: rgb(230, 83, 60);
+}
+
+/* story table styling */
+.story-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    padding: 30px 25px;
+    gap: 30px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    position: relative;
+}
+
+.story-image {
+    position: relative;
+}
+
+.story-image img {
+    border-radius: 10px;
+}
+
+.story-image .table2, th, tr {
+    border: none;
+    border-collapse: collapse;
+    width: 155px;
+    text-align: start;
+    background-color: rgba(55, 55, 55, 0.15);
+}
+
+.story-image th {
+    text-align: center;
+    border: none;
+    font-weight: 500;
+}
+
+.story-image tr {
+    text-align: center;
+    font-size: 0.7rem;
+    border: none;
+    font-weight: 500;
+}
+
+.story-image td {
+    border: none;
+}
+
+.story-image .table2 {
+    position: absolute;
+    top: 40%;
+    left: 1.5%;
+}
+
+.story-image .table3, th, tr {
+    border: none;
+    border-collapse: collapse;
+    width: 155px;
+    text-align: start;
+    background-color: rgba(55, 55, 55, 0.15);
+}
+
+.story-image .table3 {
+    position: absolute;
+    top: 40%;
+    right: 1.5%;
+}
+
+.story-image h3 {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+}
+
+.story-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+hr {
+    width: 50%;
+}
+
+.story-text p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgb(176, 176, 176);
+    text-align: justify;
+    width: 97%;
+}
+
+
+.fa-angle-right {
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+}
+
+.fa-angle-left {
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
+    top: 50%;
+    left: -0.1%;
+    transform: translate(-50%, -50%);
+}
+
+.icon1circle {
+    background-color: rgb(230, 83, 60);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+}
+
+.icon2circle {
+    background-color: rgb(230, 83, 60);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
 }
 
 /* footer section */
@@ -956,7 +1139,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    table , th, tr {
+    .bmi-chart .table1 , th, tr {
         width: 100%;
     }
 
@@ -1309,7 +1492,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    table , th, tr {
+    .bmi-chart .table1, th, tr {
         width: 100%;
     }
 
