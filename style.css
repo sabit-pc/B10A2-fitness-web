@@ -90,6 +90,12 @@ nav {
 .banner-left h1 {
     font-size: 5rem;
     font-weight: 900;
+    line-height: 80px;
+}
+
+.banner-left .sep {
+    font-size: 8rem;
+    font-weight: 500;
 }
 
 .banner-left p {
@@ -136,7 +142,7 @@ nav {
 }
 
 .btn3:hover {
-    background-color: rgb(40, 171, 17);
+    background-color: rgb(136, 45, 31);
     border: none;
     color: white;
     transition: 0.4s;
@@ -543,6 +549,18 @@ select:invalid {
     margin-top: 15px;
     display: flex;
     gap: 20px;
+}
+
+.btn6 {
+    width: 224px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(230, 83, 60);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .bmi-input-row2 {
@@ -1029,7 +1047,14 @@ footer {
 
     .banner-left h1 {
         font-size: 2.7rem;
+        line-height: 40px;
     }
+
+    .banner-left .sep {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    
 
     .banner-left p {
         font-size: 1rem;
@@ -1488,8 +1513,14 @@ footer {
     .banner-left h1 {
         width: 75%;
         font-size: 2.7rem;
+        line-height: 50px;
     }
 
+    .banner-left .sep {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    
     .banner-left p {
         font-size: 1rem;
     }
@@ -1782,7 +1813,6 @@ footer {
     .down-arrow2 .fa-angle-down {
         right: 5%;
     }
-    
     /* team section */
     .team h1 {
         font-size: 2rem;
